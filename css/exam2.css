@@ -1,0 +1,71 @@
+#sideNav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    
+}
+#sideNav .openNav{
+    background-color: blueviolet;
+    padding: 20px;
+
+}
+#sideNav .theLinks {
+    background-color: chartreuse;
+    height: 100%;
+}
+.nav-tab {
+    background-color: #0D0D0D;
+    color: #ffff;
+}
+.logo{
+    width: 50px;
+}
+.nav-tab .active{
+    color: aqua;
+}
+
+.text{
+    height: 100%;
+    background-color: rgba(225, 225, 225, 0.5);
+    transform: rotateX(90deg);
+    transform-origin: bottom; /*the start of rotat by defalt from center */
+    transition: 0.6s transform ;
+}
+
+.inner:hover .text {
+    transform: rotateX(0deg);
+}
+
+/*عشان اخلي كل الصور قد بعض*/
+.inner {
+    height: 100%;
+}
+.inner img {
+    height: 100%;
+    object-fit: cover;
+}
+.title{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 40px ;
+}
+button{
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.row button {
+    border: 3px red solid;
+    background-color: red;
+    transition: all 0.3s;
+}
+.row button:hover {
+    background-color: transparent;
+}
+.row .update {
+    border: 3px rgb(46, 86, 207) solid;
+    background-color: rgb(46, 86, 207) ;
+}
